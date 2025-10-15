@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.instagran-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   width: 60%;
+   height: 100vh;
+}
+.celular-instagran{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.celular-instagran img{
+    height: 50rem;
+}
+.login-insta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+    margin: 1rem 0;
+}
+.linkazul{
+    color: #0095f6;
+    cursor: pointer;
+}
+.foto-perfil img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+}
+.baixar-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.baixar-app img{
+    height: 3rem;
+    height: 3rem;
+}
+.instagran-login{
+    background-color: #0095f6;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 0.7rem 5rem;
+    margin: 1rem;
+}
+.instagran-login:hover{
+    background-color: #0084e0;
+    border: 1px solid #00246d;
+}
+.instagran-logout{
+    color: #0095f6;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-style: oblique;
+}
+.instagran-logo{
+    height: 3rem;
+}
+
+
+
+/* responsividade */
+@media (max-width: 1024px) {
+    .instagran-wrapper{
+        width: 90%;
+    }
+    }
+    @media (max-width: 650px){
+        body{
+            background-color: white;
+        }
+        .perfil{
+            border: none;
+        }
+        .instagran-wrapper{
+            width: 90%;
+        }
+        .celular-instagran{
+            display: none;
+        }
+        .login-insta{
+            width: 100%;
+        }
+    }
